@@ -32,7 +32,11 @@ const Mcqs = ({mcqQuestionObj, setMcqQuestionObj, quizSettings, setQuizSettings 
         dispatch(addQuestion(mcqQuestionObj));
         //  navigate('/addQuestions');
     };
-
+    
+    // Delete MCQ Object from Local storage 
+    const handleClickCancel=()=>{
+        localStorage.removeItem("question")
+    }
     return (
         <div>
             <div className="statement-div">
@@ -60,7 +64,7 @@ const Mcqs = ({mcqQuestionObj, setMcqQuestionObj, quizSettings, setQuizSettings 
             <button className="general-FeedBack-btn">
                 <img src={plusImgG}></img> General Feedback </button>
             <div className="last2-btns">
-                <button className="lastbtn">Cancel</button>
+                <button className="lastbtn" onClick={handleClickCancel}>Cancel</button>
                 <button className="lastbtn" onClick={handleClickSave}>Save</button>
             </div>
         </div>
