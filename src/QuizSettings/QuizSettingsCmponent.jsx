@@ -7,6 +7,8 @@ import ShuffleSettings from "./ShuffleSettings/ShuffleSettings";
 import FeedBackSettings from "./FeedBackSettings/FeedBackSettings";
 import AttempSettings from "./AttemptSettings/AttempSettings";
 import TimeSettings from "./TimeSettings/TimeSettings";
+
+//A component which Open the selected component of Quiz setting page
 function QuizSettingsComponent({ index, componentName, quizSettings,setQuizSettings }) {
     
     const [componentIndex, setComponentName] = useState(null);

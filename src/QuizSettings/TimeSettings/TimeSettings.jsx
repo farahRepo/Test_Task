@@ -1,9 +1,9 @@
-import { useState } from "react";
 import "./TimeSettings.css"
 import CheckBox from "../../CheckBox";
 import RadioBtn from "../../RadioBtn";
 const TimeSettings = ({ quizSettings, setQuizSettings }) => {
 
+    //For Check Box childs set to default
     const handleCheckBoxButton = (checked, label) => {
         console.log(checked, label)
         setQuizSettings((pre) => {
@@ -15,6 +15,8 @@ const TimeSettings = ({ quizSettings, setQuizSettings }) => {
             return preProps
         });
     }
+
+    //For Radio Button Only one button is selected at one time.
     const radioBtnProp = ["Total_Quiz_Time", "Per_Question_Time"]
     const handleRadioButton = (selectedText) => {
         radioBtnProp.map((nn) => {

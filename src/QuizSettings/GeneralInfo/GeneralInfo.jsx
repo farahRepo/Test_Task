@@ -6,7 +6,7 @@ import { createQuiz,getQuiz } from "../../redux/reduxSlice";
 import { useSelector,useDispatch } from "react-redux";
 import QuizSettings from "../QuizSettings";
 const GeneralInfo=({quizSettings,setQuizSettings})=>{
-    // const [value,setValue] =useState("")
+     //For Quill Editor
     var toolbarOptions = [
         ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
         ['blockquote', 'code-block'],
@@ -29,10 +29,6 @@ const GeneralInfo=({quizSettings,setQuizSettings})=>{
     const module ={
         toolbar: toolbarOptions,
     };
-//     const quizData = useSelector((state) => state.reducerSlice.quiz);
-//   useEffect(()=>{
-//   setQuizSettings((preState)=>({...preState,...quizData}))
-//   },[quizData])
     return(
             <div>
                 <h5>Title</h5> 

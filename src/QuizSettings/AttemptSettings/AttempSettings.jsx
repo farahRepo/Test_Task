@@ -3,7 +3,7 @@ import "./AttempSettings.css"
 import CheckBox from "../../CheckBox";
 const AttempSettings=({quizSettings,setQuizSettings}) => {
 
-
+    //For Stepper
     const [count, setCount] =useState(0);
 
     function handleMinus() {
@@ -14,7 +14,7 @@ const AttempSettings=({quizSettings,setQuizSettings}) => {
         setCount((prevCount) => prevCount + 1);
         setQuizSettings((pre) => ({...pre,noOfAttemptsValue:count}))
     }
-
+    //For Check Box if a check Box is set to False its child also set to Default
     const handleCheckBoxButton = (checked, label) => {
         console.log(checked, label)
         setQuizSettings((pre) => {

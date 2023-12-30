@@ -6,15 +6,6 @@ const ShuffleSettings = ({ setQuizSettings, quizSettings }) => {
         <div className="div-checkboxes">
            <CheckBox chckBxLabel="Shuffle Answers"  setQuizSettings={setQuizSettings} />  
            <CheckBox chckBxLabel="Shuffle Questions" setQuizSettings={setQuizSettings} />  
-            {/* <label>
-                <input type="checkbox"
-                    value={quizSettings.shuffleQuestionCheckbox}
-                    onChange={(e) => {
-                        setQuizSettings((pre) => ({ ...pre, shuffleQuestionCheckbox: !quizSettings.shuffleQuestionCheckbox }))
-                    }}>
-                </input>
-                Shuffle Questions
-            </label> */}
         </div>
     )
 }

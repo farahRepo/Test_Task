@@ -70,20 +70,7 @@ const FeedBackSettings = ({ quizSettings, setQuizSettings }) => {
                                     }}></input>
                             </div>
                         </div>
-                    </div>): ( 
-                            null
-                            // setQuizSettings((prevSettings) => {
-                            //     return { ...prevSettings, Only_once_after_each_attempt:!quizSettings.Only_once_after_each_attempt };
-                            //   })
-
-                            //   setQuizSettings((prevSettings) => ({
-                            //     ...prevSettings,
-                            //     Only_once_after_each_attempt: false,
-                            //     Lets_Student_see_their_current_answers:false,
-                            //     showCorrectAnsDate: null,
-                            //     hideCorrectAnsDate: null,
-                            //   }))
-                            )
+                    </div>): (  null)
             }
         </div>
     )

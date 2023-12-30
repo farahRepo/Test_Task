@@ -8,14 +8,15 @@ const QuizSettings = ({ quizSettings, setQuizSettings }) => {
   
     const navigate=useNavigate();
     const dispatch = useDispatch();
-
-
+    
+    //Save and Continue Button Add all details of Quiz Settings in Local Storage
     const handleClickSaveAndCont = () => {
         dispatch(createQuiz(quizSettings));
         setQuizSettings((pre) => ({ ...pre, tab: 1 }))        
         //  navigate('/addQuestions');
     };
-
+    
+    //Reset Button Delete All information of Quiz Settings page from local storage
     const handleReset = () => {
         localStorage.clear();
     }

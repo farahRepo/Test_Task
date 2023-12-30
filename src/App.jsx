@@ -2,8 +2,7 @@ import Header from './Header/Header.jsx'
 import CreatingQuiz from './CreatingQuiz/CreatingQuiz.jsx';
 import { useState, useEffect } from 'react';
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AddingQuestions from './AddingQuestions/AddingQuestions.jsx';
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { createQuiz } from './redux/reduxSlice.js';
 
