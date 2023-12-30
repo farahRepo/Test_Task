@@ -1,0 +1,143 @@
+.label {
+    color: var(--Fill-Dark-Dark-1, #504F54);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.statement-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.statement-input {
+    display: flex;
+    padding: 11px 12px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--form-11, #EBEAED);
+    background: var(--Form-1, #FBFAFC);
+    font-family: "Work Sans";
+}
+
+.btns-div2 {
+    display: flex;
+    padding: 4px;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: white;
+}
+
+.btns-select {
+
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btns-select.selected {
+    /* Styles for selected button */
+    background-color: green;
+    color: white;
+}
+
+.btns-select:not(.selected) {
+    /* Styles for unselected button */
+    background-color: white;
+    color: black;
+}
+
+.add-btn-div {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 6px;
+    border: 1px dashed var(--Neutral-200, #E2E8F0);
+    background: var(--Neutral-50, #F8FAFC);
+    color: var(--accent, #08496D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.add-img {
+    width: 24px;
+    height: 24px;
+}
+
+.general-FeedBack-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px dashed var(--primary, #10BAAC);
+    background: var(--Neutral-50, #F8FAFC);
+    color: var(--primary, #10BAAC);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Work Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+.last2-btns{
+    display: flex;
+padding-left: 200px;
+justify-content: flex-end;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+}
+.lastbtn{
+    display: flex;
+width: 200px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+align-self: stretch;
+border-radius: 6px;
+border: 1px solid var(--primary, #10BAAC);
+background: rgba(16, 186, 172, 0.05);
+color: var(--primary, #10BAAC);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Work Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}

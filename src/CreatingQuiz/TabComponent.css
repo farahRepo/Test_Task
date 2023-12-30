@@ -1,0 +1,30 @@
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.tab{
+
+    color: var(--accent, #08496D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    
+    background-color:  rgba(8, 73, 109, 0.10);
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid grey;
+    border-top: none;
+    cursor: pointer;
+    position: relative;
+}
+.active-tab{
+    border: none;
+    background-color: #08496D;
+/* background: rgba(8, 73, 109, 0.10); */
+}

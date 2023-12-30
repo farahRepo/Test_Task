@@ -1,0 +1,78 @@
+.drop-down-div {
+    background: var(--bg, #F9FAFB);
+    border: 16px solid var(--white, #FFF);
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.drop-down-1{
+    display: flex;
+height: auto;
+margin: 10px;
+padding: 20px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+border-radius: 8px;
+background:#FFF; 
+
+font-weight: 600;
+font-family: Work Sans;
+font-size: 16px;
+
+border: 1px solid grey; 
+}
+.drop-down-2{
+    display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 32px;
+align-self: stretch;
+}
+.drop-down-2-1{
+    display: flex;
+align-items: center;
+gap: 20px;
+flex: 1 0 0;
+}
+.drop-down-2-2{
+    display: flex;
+width: 52px;
+padding: 4px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border: 1px solid var(--bg, #F9FAFB);
+background: #FFF;
+}
+.drop-down-2-2-btn{
+    width: 35px;
+    height: 30px;
+    flex-shrink: 0;
+    border: 1px solid var(--bg, #F9FAFB);
+    background: #FFF;
+}
+.footer-btn-div{
+    display: flex;
+    padding: 0px 32px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    background-color: #FFFFFF;
+}
+.footer-btn{
+    display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+    border-radius: 6px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+background: #FFF;
+}

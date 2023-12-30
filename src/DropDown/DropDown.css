@@ -1,0 +1,49 @@
+.main-divDD {
+    /* position: relative;  */
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid var(--Brand-500, rgba(0, 161, 113, 0.50));
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dropdown-labelDD {
+    padding: 5px;
+    gap:5px;
+    color: var(--Neutral-900, #0F172A);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.dropdown-btnDD {
+    margin: 3px;
+    width: 35px;
+    height: 30px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+}
+.dropdown-options-divDD{
+    /* position: absolute;
+   top: 100%;
+    right:0; */
+  
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: left;
+    gap: 2px;
+    border-radius: 8px;
+    border: 1px solid var(--Brand-500, rgba(0, 161, 113, 0.50));
+    background: var(--Basic-White, #FFF);
+    /* z-index: 1000; */
+}

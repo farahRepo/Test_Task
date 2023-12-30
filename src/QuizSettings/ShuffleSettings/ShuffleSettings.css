@@ -1,0 +1,7 @@
+.div-checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 8px;
+    border-radius: 6px;
+}
