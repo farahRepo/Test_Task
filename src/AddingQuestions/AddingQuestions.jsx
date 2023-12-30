@@ -7,19 +7,28 @@ import DropDown from "../DropDown/DropDown"
 import { useDispatch } from "react-redux"
 import { addAllQuestions, getQuestion } from "../redux/reduxSlice"
 const AddingQuestions = ({ quizSettings, setQuizSettings }) => {
+    
+    // List for Selecting Type of QUestion
     const questions = ["Multiple Choice Answers", "True/False", "Fill in the Blanks", "Matching", "Essay Questions"]
+
+    // For If condition to convert Quetsion Type from UI in a valid Variable Name
     const name = quizSettings.questionType
     const questionTypeWithSpaces = name.replace(/_/g, ' ');
     
+    //An Object holding Only one MCQ at a time
     const [mcqQuestionObj, setMcqQuestionObj] = useState({statement: "",
                                                           options: [{ corrRNot: "Incorrect", option: "" }],})
+
+    //An Object That have all Questions of MCQs
     const [allQuestions, setAllQuestions] = useState([]);
+
+    //To add All QUestions in a local storage
     const dispatch = useDispatch()
     useEffect(() => {
-        // console.log("After push Questions", allQuestions)
         dispatch(addAllQuestions(allQuestions))
     }, [allQuestions]);
-
+    
+    //Handles for Difficulty Level 
     const handleEasyClick = () => {
         setQuizSettings((pre) => ({ ...pre, difficultyLevel: "Easy" }))
     }
@@ -29,6 +38,8 @@ const AddingQuestions = ({ quizSettings, setQuizSettings }) => {
     const handleHardClick = () => {
         setQuizSettings((pre) => ({ ...pre, difficultyLevel: "Hard" }))
     }
+
+    //Handle to add new QUestion so that previous added to local storage and Object is empty to hold new MCQ
     const handleAddNewQ = () => {
         if (questions[0] === questionTypeWithSpaces) {
             setAllQuestions((pre) => ([...pre, mcqQuestionObj]))
